@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+.dashboard-wrapper {
+  height: 100%;
+}
+
+.dashboard-header {
+  height: 7vh;
+  background-color: #121212;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-back-button{
+    padding: 0.75rem;
+    background-color: #4158d0;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.dashboard-body {
+  height: 86vh;
+  width: 100%;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  display: flex;
+
+}
+
+.dashboard-footer {
+  height: 7vh;
+  background-color: #121212;
+}
+
+.loading-container{
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    height: fit-content;
+
+}
+
+.pool-info{
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.pool-general-info{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.pool-fee-info{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: fit-content;
+    margin: 1rem;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+
+
+.pool-tvl-info{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 9;
+
+}
+
+.pool-tvl-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+
+.pool-tvl-inner{
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 40%;
+    border: 2px solid #dddddd;
+    border-radius: 0.5rem;
+    height: fit-content;
+
+}
+
+.pool-tvl-historical{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pool-tvl-24{
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid #dddddd;
+    border-radius: 0.5rem;
+    height: fit-content;
+    width: 40%;
+}
+
+.pool-tvl-24-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.pool-tvl-24-percent{
+    padding: 1rem;
+    border: 2px solid #dddddd;
+    border-radius: 0.5rem;
+    height: fit-content;
+    margin-bottom: 1rem;
+}
+
+.pool-tvl-24-value{
+    padding: 1rem;
+    border: 2px solid #dddddd;
+    border-radius: 0.5rem;
+    height: fit-content;
+}
+
+.pool-volume-wrapper{
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 9;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.pool-volume-description{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.pool-volume-alltime{
+    padding: 1rem;
+    text-align: center;
+    border: 2px solid #dddddd;
+    border-radius: 0.5rem;
+}
+
+.pool-volume-change{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pool-volume-24{
+    margin: 1rem 0rem;
+    padding: 1rem;
+    border: 2px solid #dddddd;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 40%;
+}
+
+.pool-volume-week{
+    margin: 1rem 0rem;
+    padding: 1rem;
+    border: 2px solid #dddddd;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 40%;
+}
+
+.pool-volume-month{
+    padding: 1rem;
+    border: 2px solid #dddddd;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 94%;
+}
+
+.pool-tvl-month{
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid #dddddd;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 94%;
+}
+
+.change-negative{
+    color: #FF6961;
+    padding-top: 0.5rem;
+}
+
+.change-positive{
+    color: #77dd77;
+    padding-top: 0.5rem;
+}
+
+.pool-container{
+    width: 100%;
+    display: flex;
+}
+
+.pool-score-container{
+    border-radius: 1rem;
+    width: 30%;
+    background-color: white;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.pool-score-header{
+    
+    text-align: center;
+}
+
+.invest{
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #4158d0;
+    color: white;
+    height: fit-content;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.score-content{
+    margin-top: 2rem;
+}
+
+.score-content table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.score-content table th{
+    padding: 0.5rem;
+    border: 1px solid #dddddd;
+}
+
+.score-content table tbody tr td{
+    padding: 0.5rem;
+    border: 1px solid #dddddd;
+}
+
+.total-score{
+    margin-top: 1rem;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid #dddddd;
+}
