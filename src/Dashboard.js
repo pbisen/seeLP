@@ -127,7 +127,7 @@ function getTvl24HourValueChange(poolDayData) {
 
 function getTvlWeekChange(poolDayData) {
   let todayTVL = parseFloat(poolDayData[1].tvlUSD);
-  let weekTVL = parseFloat(poolDayData[2].tvlUSD);
+  let weekTVL = parseFloat(poolDayData[7].tvlUSD);
   let percentChange = ((todayTVL - weekTVL) / weekTVL) * 100;
 
   return (
@@ -465,15 +465,15 @@ function Dashboard({ match }) {
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Percentage Volume 24</td>
+                        <td>Volume Change(past 24 hours)</td>
                         <td>{safeDataScores.percentageVolume24}</td>
                       </tr>
                       <tr>
-                        <td>Percentage TVL 24</td>
+                        <td>TVL Change(past 24 hours)</td>
                         <td>{safeDataScores.percentageTVL24}</td>
                       </tr>
                       <tr>
-                        <td>Variation Score - Volume (week)</td>
+                        <td>Variation Score - Volume (past week)</td>
                         <td>{safeDataScores.scoreVolumeWeek}</td>
                       </tr>
                       <tr>
@@ -481,19 +481,19 @@ function Dashboard({ match }) {
                         <td>{safeDataScores.scoreTVLWeek}</td>
                       </tr>
                       <tr>
-                        <td>Percentage - Volume (Month 1)</td>
+                        <td>Volume Change (past Month)</td>
                         <td>{safeDataScores.scoreVolumeMonth}</td>
                       </tr>
                       <tr>
-                        <td>Variation Score - TVL (Month 1)</td>
+                        <td>Variation Score - TVL (1 month back)</td>
                         <td>{safeDataScores.scoreTVLCoefficientMonth1}</td>
                       </tr>
                       <tr>
-                        <td>Variation Score - TVL (Month 2)</td>
+                        <td>Variation Score - TVL (2 months back)</td>
                         <td>{safeDataScores.scoreTVLCoefficientMonth2}</td>
                       </tr>
                       <tr>
-                        <td>Variation Score - Volume (Month 3)</td>
+                        <td>Variation Score - Volume (3 months back)</td>
                         <td>{safeDataScores.scoreTVLCoefficientMonth3}</td>
                       </tr>
                       <tr>
@@ -523,7 +523,8 @@ function Dashboard({ match }) {
           </div>
         )}
       </div>
-      <div className="dashboard-footer"></div>
+      <div className="dashboard-footer">
+      </div>
     </div>
   );
 }
