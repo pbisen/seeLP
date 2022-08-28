@@ -81,7 +81,7 @@ export default function TableComponent() {
       )
       :(
         <div className="table-container-outer">
-    <h1>Liquidity Pools with TVL greater than $20 Million</h1>
+    <h1>Liquidity Pools with TVL greater than $10 Million</h1>
     <table className="styled-table">
       <thead>
         <tr>
