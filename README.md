@@ -45,4 +45,12 @@ Listing a few of them below,
 - **Censorship** : To prevent a Tornade Cash situation, I deployed on IPFS through Spheron to prevent censorship for my application.
 - **First IRL Hackathon**: It being my first experience coding for 24 hours straight, but the energy around me kept me going :)
 
+
+### Video Demo: https://www.loom.com/share/d473968767a44eef805a385549217e78
+
+## Screenshots (still a work in progress -> Dark Mode coming soon)
+![Screenshot from 2022-08-28 10-06-33](https://user-images.githubusercontent.com/65162182/187988104-99752dc3-c894-4897-ae39-2bba106c59af.png)
+
+
+
 Thank you for checking out seeLP.
